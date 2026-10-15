@@ -167,6 +167,12 @@
   border-radius: 2px;
 }
 
+/* The logs toolbar is sticky at z-index 1070. Keep ACE's search box above it
+   after the page is scrolled, otherwise the toolbar covers the search controls. */
+.ace_search {
+  z-index: 1071;
+}
+
 /* Cursor row:col indicator (ext-statusbar target) overlaid on the editor's
    bottom-right. Faint translucent chip; never intercepts editor interaction. */
 .logs-statusbar {
